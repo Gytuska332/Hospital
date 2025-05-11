@@ -1,0 +1,23 @@
+{
+    "patients": [
+        {
+            "patient_id": "001",
+            "name": "John Backflip",
+            "dob": "2001-08-13",
+            "gender": "Male",
+            "records": [
+                {
+                    "type": "diagnosis",
+                    "diagnosis": "Minor bruises"
+                }
+            ]
+        },
+        {
+            "patient_id": "003",
+            "name": "Bill Scrubs",
+            "dob": "1970-06-01",
+            "gender": "Male",
+            "records": []
+        }
+    ]
+}

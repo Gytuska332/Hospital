@@ -1,0 +1,54 @@
+Medical History Management Application
+1. Introduction
+a. What is your application?
+The Medical History Management Application is a Python-based program made to manage patient records and their medical histories. It allows users to:
+
+View a list of patients and their medical records.
+Add new patients along with their diagnosis records.
+Save and load patient data from a JSON file for persistent storage.
+The application is built with modular and object-oriented principles, making it easy to maintain and extend.
+
+b. How to run the program?
+Ensure you have Python 3 installed on your system.
+Save the files Hospital.py and medical_records.json in the same directory.
+You might need to change the directory to match yours in line 141.
+Open a terminal or command prompt, navigate to the directory containing the files, and run the following command:
+c. How to use the program?
+Upon running the program, you will see a menu with three options:
+1. View Patients: Displays all patients and their medical records.
+2. Add Patient: Allows you to add a new patient and their diagnosis records.
+3. Exit: Exits the program.
+Follow the prompts to input patient details and diagnosis records when adding a new patient.
+The data is saved automatically to the JSON file (medical_records.json) for future use.
+2. Body/Analysis
+a. How the program implements functional requirements
+Patient Management
+The program uses the Patient class to represent individual patients. Each patient has attributes such as patient_id, name, dob, and gender.
+The MedicalHistory class manages a collection of patients and their records. It provides methods to:
+Load patient data from a JSON file (load_data).
+Save patient data to a JSON file (save_data).
+Add new patients and their records (add_patient).
+Display all patients and their records (display_patients).
+Medical Records
+The MedicalRecord abstract base class defines the structure for all types of medical records.
+The DiagnosisRecord class extends MedicalRecord to represent diagnosis-specific records. It includes methods to display details and convert the record to a dictionary format for storage.
+The timing_decorator displays time it took to execute a command.
+User Interaction
+The main function provides a command-line interface for users to interact with the program. It includes a menu-driven system for viewing and adding patients.
+3. Results and Summary
+a. Results
+The program successfully manages patient data and medical records.
+It provides a user-friendly interface for adding and viewing patient information.
+Data is stored persistently in a JSON file, ensuring that patient records are not lost between sessions.
+b. Conclusions
+The application meets its functional requirements by providing essential features for managing medical histories.
+It is modular and extensible, making it suitable for further development.
+c. How it would be possible to extend your application?
+The application can be extended in several ways:
+
+Additional Record Types: Add support for other types of medical records, such as prescriptions or lab results, by creating new classes that extend MedicalRecord.
+Search Functionality: Implement a feature to search for patients by name or ID.
+Data Validation: Add input validation to ensure that user inputs (e.g., dates, IDs) are in the correct format.
+Graphical User Interface (GUI): Replace the command-line interface with a GUI using a library like Tkinter or PyQt.
+Multi-User Support: Add authentication and role-based access control for multiple users (e.g., doctors, nurses, administrators).
+By implementing these features, the application can become a more comprehensive and robust medical history management system.
